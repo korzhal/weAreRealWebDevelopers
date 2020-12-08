@@ -1,0 +1,91 @@
+.skills {
+    padding: ($gap / 2) ($gap / 2) ($gap * 2) ($gap / 2);
+    &__container {
+        display: grid;
+        padding-bottom: $gap;
+        grid-gap: ($gap / 2);
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        .btn-accent {
+            width: 350px;
+        }
+    }
+}
+
+.skill-item {
+    min-height: calc(33.33vh - (40px / 3));
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    &__overlay {
+        z-index: 1;
+        background-color: $color-primary;
+        opacity: 0.8;
+        transition: opacity 0.5s;
+        @include abs-position;
+    }
+    &__image {
+        background-position: 50% 50%;
+        background-size: cover;
+        transition: 0.5s;
+        @include abs-position;
+    }
+    &__title {
+        font-family: $font-main;
+        letter-spacing: 0.1em;
+        line-height: 1.15em;
+        z-index: 2;
+        margin: 0;
+        @include abs-position;
+    }
+    &__link {
+        display: flex;
+        padding: $gap;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.5s;
+    }
+    &:nth-of-type(1) {
+        grid-area: a1;
+    }
+    &:nth-of-type(2) {
+        grid-area: a2;
+    }
+    &:nth-of-type(3) {
+        grid-area: a3;
+    }
+    &:nth-of-type(4) {
+        grid-area: a4;
+    }
+    &:nth-of-type(5) {
+        grid-area: a5;
+    }
+    &:nth-of-type(6) {
+        grid-area: a6;
+    }
+    &:nth-of-type(7) {
+        grid-area: a7;
+    }
+    &:nth-of-type(8) {
+        grid-area: a8;
+    }
+    &:nth-of-type(9) {
+        grid-area: a9;
+    }
+    &:hover {
+        .skill-item__image {
+            background-color: rgba($color-primary, 0.8);
+            transform: scale(1.1);
+        }
+        .skill-item__overlay {
+            opacity: 0.9;
+        }
+    }
+    & .skill-item__link:hover {
+        color: $color-accent;
+    }
+}

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size;
+    font-family: $font-main;
+    letter-spacing: 0.1em;
+    overflow-y: scroll;
+    color: $color-gray;
+}
+
+a {
+    text-decoration: none;
+    color: $color-light;
+}
+
+.btn,
+.btn-accent {
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s;
+    height: ($gap * 3);
+}
+
+.btn {
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+}
+
+.btn-accent {
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+    transition: background-color 0.5s;
+    font-size: 18px;
+}
+
+.btn:hover,
+.btn-accent:hover {
+    background-color: $color-accent;
+}
+
+h1 {
+    font-family: $font-header;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: $font-header;
+    color: $color-primary;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: $font-header;
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    transition: color 0.5s;
+}
+
+p {
+    letter-spacing: 0.055em;
+}

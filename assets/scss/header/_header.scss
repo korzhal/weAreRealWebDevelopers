@@ -1,0 +1,10 @@
+.header {
+    display: grid;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/img-header.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: $color-light;
+}

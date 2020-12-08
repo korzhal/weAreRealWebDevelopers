@@ -1,0 +1,19 @@
+.header-navbar {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 -20px 0 0;
+    }
+    &__link {
+        display: block;
+        padding: $gap;
+        font-size: 1.125rem;
+        transition: color 0.5s;
+    }
+    &__link:hover {
+        color: $color-accent;
+    }
+}
